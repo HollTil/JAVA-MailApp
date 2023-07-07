@@ -1,0 +1,105 @@
+<mxfile host="Electron" modified="2023-07-07T08:07:51.774Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="TnFDXoqTn33zY4ziCTvA" version="21.6.1" type="device">
+  <diagram name="Seite-1" id="EUdkGIbn12DiTrd4EqQk">
+    <mxGraphModel dx="1290" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-1" value="Mail&lt;br&gt;&lt;br&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-2" value="- sender:String&lt;br&gt;- recipient: String&lt;br&gt;- subject: String&lt;br&gt;- message: String&lt;br&gt;- attachment: Object" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-1">
+          <mxGeometry y="26" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-1">
+          <mxGeometry y="120" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-4" value="+ Mail()&lt;br&gt;+ getter(): String&lt;br&gt;+ setter(String): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-1">
+          <mxGeometry y="128" width="160" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-13" value="Sender" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="40" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-14" value="- connection: SMTP Connection" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-13">
+          <mxGeometry y="26" width="190" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-13">
+          <mxGeometry y="60" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-16" value="+ Sender()&lt;br&gt;+send (Mail): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-13">
+          <mxGeometry y="68" width="190" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-17" value="SMTP Connection" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="250" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-18" value="- connection: SMTP Connection" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-17">
+          <mxGeometry y="26" width="210" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-17">
+          <mxGeometry y="60" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-20" value="+ SMTP Connection()&lt;br&gt;+getConnection(): SMTP Connection" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-17">
+          <mxGeometry y="68" width="210" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-21" value="UI" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="40" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-22" value="-sender: Sender" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-21">
+          <mxGeometry y="26" width="190" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-21">
+          <mxGeometry y="60" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-24" value="+ UI()&lt;br&gt;+ run(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-21">
+          <mxGeometry y="68" width="190" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-25" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="60" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-26" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="60" y="89.5" as="sourcePoint" />
+            <mxPoint x="120" y="89.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-27" value="Mail Validator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="210" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-28" value="+ isValid(String): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-27">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Ki5gjtvgImt1t0f3LM_Z-27">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.474;exitY=1.192;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.938;entryY=0.538;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="230.05999999999995" y="160.00400000000005" as="sourcePoint" />
+            <mxPoint x="290.0799999999999" y="240.00800000000007" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="180.02" />
+              <mxPoint x="330" y="180.02" />
+              <mxPoint x="330" y="240.02" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-32" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="110" as="sourcePoint" />
+            <mxPoint x="360" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-33" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="580" y="120" as="sourcePoint" />
+            <mxPoint x="520" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ki5gjtvgImt1t0f3LM_Z-34" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.427;exitY=1.046;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.533;entryY=-0.023;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ki5gjtvgImt1t0f3LM_Z-16" target="Ki5gjtvgImt1t0f3LM_Z-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="320" as="sourcePoint" />
+            <mxPoint x="500" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
