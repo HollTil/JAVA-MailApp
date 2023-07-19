@@ -6,7 +6,9 @@ public class Main {
     public static void main(String[] args) {
         //test();
         try {
-            TerminalUI.runTerminal();
+            Mail mail = TerminalUI.runTerminal();
+            Sender sender = new Sender();
+            sender.send(mail);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }

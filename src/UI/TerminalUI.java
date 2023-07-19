@@ -1,36 +1,49 @@
 package UI;
-
+import Helper.Validator;
 import Mail.Mail;
 import Sender.Sender;
-
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class TerminalUI {
-    public static void runTerminal() throws Exception {
-        String recipient;
-        String subject;
-        String message;
+    public static Mail runTerminal() throws Exception {
+        Mail mail = new Mail();
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Bitte gib die Email des Empfängers ein: ");
-        recipient = scanner.nextLine();
+        while(true) {
+            try {
+                System.out.println("Bitte gib die Email des Empfängers ein: ");
+                String recipient = scanner.nextLine();
 
+                if (Validator.isValid(recipient)) {
+                    mail.setRecipient(recipient);
+                    break;
+                }
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+            }
+        }
 
-        System.out.println("Bitte gib einen Betreff an: ");
-        subject = scanner.nextLine();
+        while (true) {
+            try {
+                System.out.println("Bitte gib einen Betreff an: ");
+                String subject = scanner.nextLine();
+                
+                if (Validator.subjectValid(subject)) {
+                    mail.setSubject(subject);
+                    break;
+                }
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+            }
+        }
 
 
         System.out.println("Bitte gib deine Nachricht ein: ");
-        message = scanner.nextLine();
-
-        Mail mail = new Mail();
-        mail.setRecipient(recipient);
-        mail.setSubject(subject);
+        String message = scanner.nextLine();
         mail.setMessage(message);
 
-        Sender sender = new Sender();
-        sender.send(mail);
+        return mail;
     }
 }

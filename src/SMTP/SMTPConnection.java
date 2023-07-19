@@ -8,8 +8,8 @@ public class SMTPConnection {
     private Properties prop;
 
     private static final String FROM = "java-mail@beck-homes.com";
-    private static final String USERNAME = "ava-mail@beck-homes.com";  // java-mail@beck-homes.com // static = Methode kann genutzt werden bevor das Obj initialisiert wurde
-    private static final String PASSWORD = "XXXXX";
+    private static final String USERNAME = "java-mail@beck-homes.com";  // java-mail@beck-homes.com // static = Methode kann genutzt werden bevor das Obj initialisiert wurde
+    private static final String PASSWORD = "XXXX";
     private static final String HOST = "mail.beck-homes.com";
     private static final int PORT = 465;
 
