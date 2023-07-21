@@ -1,14 +1,15 @@
 import Mail.Mail;
 import Sender.Sender;
-import UI.TerminalUI;
+import UI.SwingUI;
 
 public class Main {
     public static void main(String[] args) {
         //test();
         try {
-            Mail mail = TerminalUI.runTerminal();
-            Sender sender = new Sender();
-            sender.send(mail);
+            //Mail mail = TerminalUI.runTerminal();
+            //Sender sender = new Sender();
+            //sender.send(mail);
+            SwingUI ui = new SwingUI();
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
@@ -23,7 +24,7 @@ public class Main {
 
         try {
             Sender sender = new Sender();
-           // for (int i = 0; i<100; i++) {  <= for-Schleife für vielfaches Senden an eine Email-Adresse
+           // for (int i = 0; i<100; i++) {  <= for-Schleife für vielfaches Senden an eine Email-Adresse (hier 100x)
                 sender.send(mail);
            // }
         } catch (Exception ex) {

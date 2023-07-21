@@ -13,7 +13,7 @@ public class TerminalUI {
 
         while(true) {
             try {
-                System.out.println("Bitte gib die Email des Empfängers ein: ");
+                System.out.println("Bitte gib die Email-Adresse des Empfängers ein: ");
                 String recipient = scanner.nextLine();
 
                 if (Validator.isValid(recipient)) {

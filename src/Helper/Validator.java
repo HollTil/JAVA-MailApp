@@ -17,6 +17,7 @@ public class Validator {
         return true;
     }
 
+
     /**
      * Validates e-mail address. Checks if this not null or empty.
      * Checks if the e-mail address has correct chars sequence.
@@ -34,7 +35,7 @@ public class Validator {
         if(!containsMailSign(cleanMail)) {
             throw new NoSuchElementException("ERROR: E-Mail address does not contain or has to many '@' sign!");
         }
-        //TODO: @ counter
+
         if(!isUsernameValid(cleanMail)) {
             throw new NoSuchElementException("ERROR: E-Mail address does not start with valid username!");
         }
